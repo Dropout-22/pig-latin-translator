@@ -1,0 +1,100 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fdf6e3;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+  
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff7f0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+  
+/* Heading */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+  
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: vertical;
+}
+  
+/* Button */
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff7675;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+button:hover {
+    background-color: #ff4f4f;
+}
+  
+/* Output */
+.output {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    min-height: 60px;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+  
+/* 🎯 Mobile Tweaks */
+@media (max-width: 480px) {
+    .container {
+      padding: 1.5rem 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    textarea {
+      font-size: 0.95rem;
+      height: 100px;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .output {
+      font-size: 0.95rem;
+    }
+}
+  
